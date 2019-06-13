@@ -1,0 +1,60 @@
+addNumbers.sh
+===========
+
+Write a program that will iterate over the input, adding the digits, and returning the result.
+ 
+Input:
+- MUST accept STDIN as the default
+- MUST accept a file when flag [-f] is specified
+- MUST handle hex values when flag [-x] is specified
+ 
+Output:
+- MUST output result as Long to STDOUT
+- MUST always output result in base 10
+ 
+ 
+Be sure to include:
+- README on how to build/test/execute your application
+- Automated Unit Tests
+ 
+ 
+Examples:
+```
+$ echo "abc123" | ./myProg
+6
+ 
+$ echo "abc123" | ./myProg -x
+39
+ 
+$ echo "qq"; | ./myProg
+0
+ 
+$ echo "abc123" > file.tmp
+$ ./myProg -f file.tmp
+6
+```
+
+
+Prerequisites
+-------------
+
+* Bash
+
+
+Setup
+-----
+run in same directory or place in $PATH
+
+Usage
+-----
+
+The requirements state the usage;
+
+unit.sh is the script file that will test the bash script file "addNumbers.sh"
+
+I didn't have enough time or I would have combined the two arrays when I loop through it.
+
+As for the -x options; the example you gave didn't add up; perhaps you could explain it more and I can correct it later.
+
+P.S. The unit test code expects that a file called "test" is there, I have included it in the repo;
+"`addNumbers.sh -f test`" and it expects a 6 as a value
