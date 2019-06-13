@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 if [ $# -eq 2 ] && [ $1 = '-f' ]
 then
     # read in the file we specified
